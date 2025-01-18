@@ -12,7 +12,7 @@ variable "instance_type" {
 
 variable "tags" {
     description = "Name of the EC2 instance"
-    type = map
+    type = map(string)
     default = {
         Name = "dev"
     }
